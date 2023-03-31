@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .image-slider{
+            margin: auto;
+            width: 700px;
+            height: 500px;
+            /* background-color: blue; */
+            position: relative;
+        }
+        .image_area{
+            width: 100%;
+            height: 500px;
+        }
+        .left,.right{
+            position: absolute;
+            top: 45%;
+            font-size: 48px;
+            color: red;
+            background-color: black;
+            cursor:pointer;
+        }
+        .right{
+            right: 0;
+        }
+        .left{
+            left: 0;
+        }
+        .left:hover, .right:hover{
+            color: forestgreen;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-slider">
+        <img src="" alt="" class="image_area" id="slider">
+        <button class="left" onclick="previous()">&lt;</button>
+        <button class="right" onclick="next()">&gt;</button>
+    </div>
+    <script src="imageSlider.js"></script>
+    
+</body>
+</html>

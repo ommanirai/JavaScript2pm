@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2 id="heading">Hello</h2> -->
+
+
+    <!-- <button onclick="document.getElementById('con').style.backgroundColor= 'red';">Click Me</button> -->
+    <!-- <button onclick="change_bg_color()" onmouseenter="change_color()" onmouseout="change_color_again()">Click Me</button>
+    <div class="container" id="con">
+        <input type="text" id="input" onkeydown="type_here()"><br>
+        Container
+        <h2 id="heading2" ></h2>
+    </div> -->
+    <button onclick="light_on()">On</button>
+    <button onclick="light_off()">Off</button>
+    <img src="off.jpg" alt=""id="light_image">
+
+
+
+    <script>
+        function light_on(){
+            document.getElementById('light_image').src = 'on.jpg';
+        }
+
+        function light_off(){
+            document.getElementById('light_image').src = 'off.jpg'
+        }
+
+        function type_here(){
+            document.getElementById('heading2').innerHTML = document.getElementById('input').value;
+        }
+
+        function change_color_again(){
+            document.getElementById('con').style.color = 'yellow';
+        }
+
+        function change_color(){
+            document.getElementById('con').style.color = 'red';
+        }
+        
+        function change_bg_color(){
+            document.getElementById('con').style.backgroundColor= 'red';
+            document.getElementById('con').style.width= '600px';
+            document.getElementById('con').style.height= '600px';
+        }
+        // document.write('Welcome to js')
+        document.getElementById('heading').innerHTML = "Hi from js"
+    </script>
+    <!-- 
+        event => onclick, onchange, onmouseover, onmouseout, onmouseenter, onkeyup, onKeydown
+    
+    
+    -->
+</body>
+</html>

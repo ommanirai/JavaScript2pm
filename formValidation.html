@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="">Username</label>
+        <input type="text" id="username" onkeyup="username_validation()">
+        <span id="error_username"></span>
+        <br><br>
+
+        <label for="">Age</label>
+        <input type="text" id="age" onkeyup="age_validation()">
+        <span id="error_age"></span><br><br>
+
+        <label for="">Phone</label>
+        <input type="text" id="phone" onkeyup="phone_validation()">
+        <span id="error_phone"></span>
+        <br><br>
+
+        <label for="">Email</label>
+        <input type="text" id="email" onkeyup="email_validation()">
+        <span id="error_email"></span>
+        <br><br>
+
+        <label for="">Password</label>
+        <input type="text" id="password" onkeyup="password_validation()">
+        <span id="error_password"></span>
+        <br><br>
+
+        <input type="submit">
+    </form>
+
+
+    <script src="formValidation.js"></script>
+</body>
+
+</html>

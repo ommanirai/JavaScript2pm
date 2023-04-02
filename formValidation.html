@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form>
+    <form onsubmit="return form_validation()">
         <label for="">Username</label>
         <input type="text" id="username" onkeyup="username_validation()">
         <span id="error_username"></span>
@@ -30,7 +30,8 @@
         <br><br>
 
         <label for="">Password</label>
-        <input type="text" id="password" onkeyup="password_validation()">
+        <input type="password" id="password" onkeyup="password_validation()">
+        <span id="show_hide" onclick="show_hide()">SHOW</span>
         <span id="error_password"></span>
         <br><br>
 
